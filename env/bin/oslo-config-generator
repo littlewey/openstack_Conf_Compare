@@ -1,0 +1,10 @@
+#!/home/esiwegu/CloudStation/project2017/CEE_ojt_SeKi/study/onsite/tasks/configCompare/bin/python
+# PBR Generated from u'console_scripts'
+
+import sys
+
+from oslo_config.generator import main
+
+
+if __name__ == "__main__":
+    sys.exit(main())
