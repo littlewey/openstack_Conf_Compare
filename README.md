@@ -1,10 +1,36 @@
-# openstack_Conf_Compare
-Parse conf by oslo_config and compare all conf files under two folders, typically for two cloud nodes' compare audit.
+# Description
+Parse conf by oslo_config and compare all conf files under two folders, typically for two cloud nodes' compare audit usage.
+
+# Installation
+
+This tool was only tested on Ubuntu 16.04.1 LTS while it should be working on any Unix-like environment.
+
+A virtual env was included to make it works out of box, thus you could install it just from git via below command:
+
+```bash
+$ git clone https://github.com/littlewey/openstack_Conf_Compare
+```
+
+> note, if git is not installed, install it
+
+```bash
+// in Debian, Ubuntu etc.
+
+$ sudo apt-get install git
+
+// or in Redhat flavor Linux/
+
+$ yum install git
+```
+
+
 
 # How to use
+
 Run `configCompare.sh` with two folders' path to be compared
 ```bash
-$ configCompare.sh <path of Folder A> <path of Folder B>
+$ cd openstack_Conf_Compare
+$ ./configCompare.sh <path of Folder A> <path of Folder B>
 ```
 > Typical use case
 
