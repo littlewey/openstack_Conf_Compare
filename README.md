@@ -19,7 +19,7 @@ After transferring files to local machine with our tool installed, run compare, 
 ```
 $ ./configCompare.sh /media/confFetch/compute-1-6 /media/confFetch/compute-0-1
 [OK] configCompare started ...
-Different file nova.conf found in /media/confFiles/imo/confFetch/compute-1-6/nova and /media/confFiles/imo/confFetch/compute-0-1/nova
+Different file nova.conf found in /media/confFiles/compute-1-6/nova and /media/confFiles/compute-0-1/nova
 ['diff', "['vnc', 'vncserver_listen', 0]", '192.168.2.31,', '192.168.2.43,']
 ['diff', "['vnc', 'vncserver_proxyclient_address', 0]", '192.168.2.31,', '192.168.2.43,']
 ['diff', "['DEFAULT', 'vcpu_pin_set', 0]", '', '3-13,17-27,']
