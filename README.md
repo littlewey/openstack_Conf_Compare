@@ -46,14 +46,12 @@ After transferring files to local machine with our tool installed, run compare, 
 $ ./configCompare.sh /media/confFetch/compute-1-6 /media/confFetch/compute-0-1
 [OK] configCompare started ...
 Different file nova.conf found in /media/confFiles/compute-1-6/nova and /media/confFiles/compute-0-1/nova
-['diff', "['vnc', 'vncserver_listen', 0]", '192.168.2.31,', '192.168.2.43,']
-['diff', "['vnc', 'vncserver_proxyclient_address', 0]", '192.168.2.31,', '192.168.2.43,']
-['diff', "['DEFAULT', 'vcpu_pin_set', 0]", '', '3-13,17-27,']
+['diff', "['vnc', 'vncserver_listen', 0]", '192.168.2.xxx,', '192.168.2.yyy,']
+['diff', "['vnc', 'vncserver_proxyclient_address', 0]", '192.168.2.xxx,', '192.168.2.yyy,']
 ['diff', "['DEFAULT', 'reserved_memory_pages', 0]", '0:1GB:53,', '']
-['diff', "['DEFAULT', 'my_ip', 0]", '192.168.2.31,', '192.168.2.43,']
-['diff', "['DEFAULT', 'reserved_host_disk_mb', 0]", '1425408,', '0,']
+['diff', "['DEFAULT', 'my_ip', 0]", '192.168.2.xxx,', '192.168.2.yyy,']
 ['leftMiss', 'reserved_huge_pages', 'NOTHING HERE', "['node:0,size:1GB,count:50']"]
-['diff', "['cache', 'memcache_servers', 0]", '192.168.2.31:11211,', '192.168.2.43:11211,']
+['diff', "['cache', 'memcache_servers', 0]", '192.168.2.xxx:11211,', '192.168.2.yyy:11211,']
 
 ```
 You could also do compare between two Openstack system's node.
