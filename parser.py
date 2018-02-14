@@ -5,7 +5,7 @@ import sys
 
 '''
 TEST loadConfLocally
-
+!!!
 
 confA_file_path = "./testA.conf"
 confB_file_path = "./testB.conf"
@@ -43,12 +43,12 @@ def diffConf(confA,confB):
 
     parserA = ConfigParser()
     parserA.parse(listConf(confA))
-    #print "parserA.values \n" 
+    #print "parserA.values \n"
     #print parserA.values
 
     parserB = ConfigParser()
     parserB.parse(listConf(confB))
-    #print "parserB.values \n" 
+    #print "parserB.values \n"
     #print parserB.values
 
     diffList = list(diff(parserA.values,parserB.values))
